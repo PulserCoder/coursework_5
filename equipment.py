@@ -33,7 +33,7 @@ class Weapon:
 class EquipmentData:
     weapons: List[Weapon]
     armors: List[Armor]
-
+#
 
 class Equipment:
 
