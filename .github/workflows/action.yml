@@ -25,5 +25,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            docker pull pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
-            docker run -d -p 80:80 pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+            docker run -d -p 81:80 pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
