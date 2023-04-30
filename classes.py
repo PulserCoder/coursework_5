@@ -23,7 +23,7 @@ WarriorClass = UnitClass(
     armor=1.2,
     skill=Berserker()
 )
-
+#
 ThiefClass = UnitClass(
     name="Вор",
     max_health=50.0,
