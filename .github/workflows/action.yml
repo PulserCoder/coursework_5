@@ -25,5 +25,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            echo ${{ secrets.PASSWORD }} | sudo -S docker pull -d pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+            echo ${{ secrets.PASSWORD }} | sudo -S docker pull pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
             echo ${{ secrets.PASSWORD }} | sudo -S docker run -d -p 80:80 pulsercoder/skypro_pkuzmin_game:$GITHUB_REF_NAME-$GITHUB_RUN_ID
